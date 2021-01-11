@@ -1,5 +1,5 @@
 <template>
-    <div class="login flex-container">
+    <div class="login flex-container-colunm">
         <div class="box-login-superior">
             <form class="form-content">
                 <h1 class="title-box-content">Log in</h1>
@@ -16,7 +16,7 @@
                 </div>
             </form>
         </div>
-        <div class="box-login-inferior flex-container">
+        <div class="box-login-inferior flex-container-inline">
             <a href="" class="btn btn-google">
                 <svg>
                     <g>
@@ -92,9 +92,15 @@ input, button{
     outline: none!important;
 }
 
-.flex-container{
+.flex-container-colunm{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-inline{
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -166,6 +172,7 @@ input, button{
     width: 75px;
     height: 37px;
     border-radius: 5px;
+    margin: 5px;
 }
 
 .btn a{
