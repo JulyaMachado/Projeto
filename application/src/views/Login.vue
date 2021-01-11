@@ -41,6 +41,19 @@
                     </g>
                 </svg>
             </a>
+            <a href="" class="btn btn-twitter">
+                <svg>
+                    <g>
+                        <g>
+                            <path class="st0" d="M20.5,2.6c-0.8,0.3-1.6,0.6-2.4,0.7c0.9-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.7,1
+                                c-0.8-0.8-1.9-1.3-3.1-1.3c-2.3,0-4.2,1.9-4.2,4.2c0,0.3,0,0.7,0.1,1C6.6,5.6,3.5,4,1.4,1.4C1.1,2,0.9,2.8,0.9,3.5
+                                C0.9,5,1.6,6.3,2.7,7C2,7,1.4,6.8,0.8,6.5c0,0,0,0,0,0.1c0,2,1.5,3.7,3.4,4.1c-0.4,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1
+                                c0.5,1.7,2.1,2.9,3.9,2.9C4.8,14.8,3,15.5,1,15.5c-0.3,0-0.7,0-1-0.1c1.9,1.2,4.1,1.9,6.4,1.9c7.7,0,12-6.4,12-12
+                                c0-0.2,0-0.4,0-0.5C19.2,4.2,19.9,3.5,20.5,2.6L20.5,2.6z"/>
+                        </g>
+                    </g>
+                </svg>
+            </a>
         </div>
     </div>
 </template>
@@ -159,18 +172,24 @@ input, button{
     color: #fff;
 }
 
+.st0{fill:#FFFFFF;}
+
 .btn-google{
     padding: 9px 25px;
     background-color: #EA4335;
     border-bottom: 3px solid #bb2c1f;
 }
 
-.st0{fill:#FFFFFF;}
-
 .btn-linkedin{
     padding: 7px 28px;
     background-color: #007ab9;
     border-bottom: 3px solid #025781;
+}
+
+.btn-twitter{
+    padding: 8px 28px;
+    background-color: #55acee;
+    border-bottom: 3px solid #3e90cf;
 }
 
 </style>
