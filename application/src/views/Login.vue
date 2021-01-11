@@ -15,7 +15,7 @@
                     <input type="checkbox" id="c-remenber" name="c-remember" /> Remember me</label>
                 </div>
                 <div class="form-button">
-                    <button type="submit">Go</button>
+                    <button @click="login">Go</button>
                 </div>
             </form>
         </div>
@@ -70,7 +70,11 @@ export default {
     data() {
         return {};
     },
-    methods: {}
+    methods: {
+        login: function() {
+            this.$router.replace('home');
+        }
+    }
 };
 </script>
 
