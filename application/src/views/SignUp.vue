@@ -2,7 +2,7 @@
     <div class="sign-up">
         <div class="box-login-superior">
             <form class="form-content">
-                <h1 class="title-box-content">New Account</h1>
+                <h1 class="title-box-content">New account</h1>
                 <div class="form-input">
                     <input type="text" placeholder="username@email.com" />
                 </div>
@@ -18,10 +18,24 @@
             </form>
         </div>
         <div class="box-login-inferior">
-            <router-link to="/login"><span class="back">⬅ back</span></router-link>
+            <a @click="login"><span class="back">⬅ back</span></a>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'sign-up',
+    data() {
+        return {};
+    },
+    methods: {
+        login: function() {
+            this.$router.replace('/');
+        }
+    }
+};
+</script>
 
 <style scoped>
 *{
@@ -60,6 +74,10 @@ input, button{
     align-items: center;
 }
 
+.title-box-content{
+    margin-bottom: 10px;
+}
+
 .flex-container-inline{
     display: inline-flex;
     justify-content: center;
@@ -71,6 +89,8 @@ input, button{
     height: auto;
     position: relative;
     margin: 0 auto;
+    top: 40px;
+    z-index: 999;;
 }
 
 .box-login-superior{
@@ -106,7 +126,7 @@ input, button{
 }
 
 .form-button button{
-    margin: 30px 0 10px 0;
+    margin: 20px 0 10px 0;
     background-color: #002d9c;
     padding: 10px 30px;
     color: #fff;
@@ -119,7 +139,6 @@ input, button{
 
 .back{
     color: #fff;
+    cursor: pointer!important;
 }
-
-
 </style>
