@@ -1,6 +1,10 @@
 <template>
   <div class="dashboard">
+    <div class="box-total">
+            <span>don't waste more time with bug</span>
+        </div>
     <header class="flex-container-inline">
+        
         <div class="box-left">
             <p>STOP <strong>Bug</strong></p>
         </div>
@@ -60,11 +64,31 @@ header{
     width: 100%;
     height: 60px;
     background-color: #161616;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .5);
     color: #ffffff;
+    overflow: hidden;
+}
+
+.box-total{
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+}
+
+.box-total span{
+    font-size: .65rem;
+    letter-spacing: 1px;
+    position: relative;
+    top: 5px;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 .box-left{
     width: 20%;
+    height: 60px;
 }
 
 .box-left p{
@@ -75,9 +99,8 @@ header{
 
 .box-center{
     width: 60%;
+    height: 60px;
 }
-
-
 
 .box-center input{
     width: 70%;
@@ -92,7 +115,6 @@ header{
 }
 
 .box-center input:focus{
-    border: 1px solid rgba(255, 255, 255, .7);
     padding: 10px 18px;
     transition: .4s;
     -webkit-transition: .4s;
@@ -102,6 +124,7 @@ header{
 
 .box-right{
     width: 20%;
+    height: 60px;
 }
 
 .btn-logout{
