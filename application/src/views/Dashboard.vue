@@ -5,7 +5,11 @@
             <p>STOP <strong>Bug</strong></p>
         </div>
         <div class="box-center">
-            center
+            <form>
+                <div class="form-search">
+                    <input type="text" placeholder="Search solution..." />
+                </div>
+            </form>
         </div>
         <div class="box-right">
             <div class="btn-logout">
@@ -47,6 +51,7 @@ a{
 
 .flex-container-inline{
     display: inline-flex;
+    overflow-x: hidden;
 }
 
 header{
@@ -60,6 +65,12 @@ header{
 
 .box-left{
     width: 20%;
+}
+
+.box-left p{
+    margin: 20px 23px;
+    position: relative;
+    float: left;
 }
 
 .box-center{
