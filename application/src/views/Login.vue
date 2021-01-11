@@ -58,6 +58,9 @@
                 </svg>
             </a>
         </div>
+        <div class="link-new-account">
+            <router-link to="/sign-up"><span>create <strong>new</strong> account</span></router-link>
+        </div>
     </div>
 </template>
 
@@ -144,14 +147,6 @@ input, button{
     margin-bottom: 10px;
 }
 
-.form-input label{
-    text-align: left;
-    position: relative;
-    float: left;  
-    font-size: .8rem;
-    font-weight: 600;
-}
-
 .form-input input{
     width: 270px;
     padding: 10px 15px;
@@ -221,6 +216,14 @@ input, button{
     position: relative;
     float: right;
     margin-right: 15px;
+}
+
+.link-new-account{
+    margin-top: 10px;
+}
+
+.link-new-account span{
+    color: #002d9c!important;
 }
 
 </style>

@@ -1,0 +1,113 @@
+<template>
+    <div class="sign-up">
+        <div class="box-login-superior">
+            <form class="form-content">
+                <h1 class="title-box-content">New Account</h1>
+                <div class="form-input">
+                    <input type="text" placeholder="username@email.com" />
+                </div>
+                <div class="form-input">
+                    <input type="password" placeholder="password" />
+                </div>
+                <div class="form-input">
+                    <input type="password" placeholder="confirm password" />
+                </div>
+                <div class="form-button">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: #161616;
+    font-size: 1.8rem;
+}
+
+body, html{
+    width: 100%;
+    height: 100vh;
+}
+
+#app{
+    background: #0043CE!important;
+}
+
+button{
+    cursor: pointer;
+}
+
+input, button{
+    outline: none!important;
+}
+
+.flex-container-colunm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-inline{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up{
+    width: 320px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+.box-login-superior{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px -1px 20px rgba(0,0,0,.15);
+}
+
+.form-input input{
+    width: 270px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid rgb(177, 177, 177);
+    margin: 10px 0;
+}
+
+.form-input input:focus{
+    padding: 15px 20px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+}
+
+.form-button button{
+    margin: 30px 0 10px 0;
+    background-color: #002d9c;
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 3px solid rgba(15,98,254, .75)!important;
+    border-radius: 5px;
+}
+
+
+</style>
