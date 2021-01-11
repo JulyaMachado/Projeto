@@ -72,7 +72,7 @@ export default {
     },
     methods: {
         login: function() {
-            this.$router.replace('home');
+            this.$router.replace('dashboard');
         }
     }
 };
@@ -85,6 +85,11 @@ export default {
     box-sizing: border-box;
 }
 
+body, html{
+    width: 100%;
+    height: 100vh;
+}
+
 a{
     text-decoration: none;
 }
@@ -92,11 +97,6 @@ a{
 h1{
     color: #161616;
     font-size: 1.8rem;
-}
-
-body, html{
-    width: 100%;
-    height: 100vh;
 }
 
 #app{

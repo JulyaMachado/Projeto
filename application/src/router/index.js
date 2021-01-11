@@ -3,22 +3,28 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import SignUp from '../views/SignUp.vue'
+import Dashboard from '../views/Dashboard.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/',
+    name: 'login',
+    component: Login
+  },  
   {
     path: '/sign-up',
     name: 'sign-up',
     component: SignUp
   },
   {
-    path: '/login',
-    name: 'login',
-    component: Login
-  },  
+    path: '/dashboard',
+    name: 'dashboard',
+    component: Dashboard
+  },
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: Home
   },
