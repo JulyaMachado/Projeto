@@ -77,6 +77,29 @@ header{
     width: 60%;
 }
 
+
+
+.box-center input{
+    width: 70%;
+    padding: 10px 15px;
+    position: relative;
+    margin: 10px 0;
+    background-color: #161616;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 30px;
+    color: #fff!important;
+    outline: none!important;
+}
+
+.box-center input:focus{
+    border: 1px solid rgba(255, 255, 255, .7);
+    padding: 10px 18px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+}
+
 .box-right{
     width: 20%;
 }
