@@ -17,9 +17,18 @@
             </form>
         </div>
         <div class="box-login-inferior flex-container">
-            <div class="btn">
-                <a href="" class="btn-google">Google</a>
-            </div>
+            <a href="" class="btn btn-google">
+                <svg>
+                    <g>
+                        <path class="st0" d="M0.5,8.3C0.4,4,4.1,0.1,8.4,0c2.2-0.2,4.3,0.7,6,2c-0.7,0.7-1.4,1.5-2.1,2.2c-1.5-0.9-3.2-1.6-4.9-1
+                            C4.6,4.1,2.9,7.3,4,10c0.8,2.8,4.2,4.3,6.9,3.2c1.4-0.5,2.3-1.8,2.7-3.1c-1.6,0-3.2,0-4.8-0.1c0-0.9,0-1.9,0-2.8
+                            c2.6,0,5.3,0,7.9,0c0.2,2.3-0.2,4.8-1.7,6.6c-2.1,2.6-5.9,3.4-8.9,2.4C2.8,15.1,0.5,11.8,0.5,8.3z"/>
+                        <path class="st0" d="M21.9,4.7c0.8,0,1.6,0,2.4,0c0,0.8,0,1.6,0,2.4c0.8,0,1.6,0,2.4,0c0,0.8,0,1.6,0,2.4c-0.8,0-1.6,0-2.4,0
+                            c0,0.8,0,1.6,0,2.4c-0.8,0-1.6,0-2.4,0c0-0.8,0-1.6,0-2.4c-0.8,0-1.6,0-2.4,0c0-0.8,0-1.6,0-2.4c0.8,0,1.6,0,2.4,0
+                            C21.9,6.3,21.9,5.5,21.9,4.7z"/>
+                    </g>
+                </svg>
+            </a>
         </div>
     </div>
 </template>
@@ -39,6 +48,10 @@ export default {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
 }
 
 body, html{
@@ -125,9 +138,21 @@ input, button{
 }
 
 .btn{
-    width: 250px;
-    padding: 10px;
-    background-color: red;
+    width: 75px;
+    height: 37px;
+    border-radius: 5px;
 }
+
+.btn a{
+    color: #fff;
+}
+
+.btn-google{
+    padding: 9px 25px;
+    background-color: #EA4335;
+    border-bottom: 3px solid #bb2c1f;
+}
+
+.st0{fill:#FFFFFF;}
 
 </style>
