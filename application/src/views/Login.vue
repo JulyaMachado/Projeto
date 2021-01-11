@@ -10,7 +10,7 @@
                     <input type="password" placeholder="password" />
                 </div>
                 <div class="form-check">
-                    <a href="#">Forgot</a>
+                    <a href="#" class="forgot">forgot</a>
                     <label for="c-remember">
                     <input type="checkbox" id="c-remenber" name="c-remember" /> Remember me</label>
                 </div>
@@ -206,6 +206,11 @@ input, button{
     border-bottom: 3px solid #3e90cf;
 }
 
+.form-check{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
 .form-check label{
     position: relative;
     float: left;
@@ -216,6 +221,10 @@ input, button{
     position: relative;
     float: right;
     margin-right: 15px;
+}
+
+.forgot{
+    color: #002d9c;
 }
 
 .link-new-account{

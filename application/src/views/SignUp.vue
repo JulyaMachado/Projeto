@@ -17,6 +17,9 @@
                 </div>
             </form>
         </div>
+        <div class="box-login-inferior">
+            <router-link to="/login"><span class="back">⬅ back</span></router-link>
+        </div>
     </div>
 </template>
 
@@ -77,8 +80,16 @@ input, button{
     width: 100%;
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 1px -1px 20px rgba(0,0,0,.15);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 1px 3px 20px rgba(0,0,0,.15);
+}
+
+.box-login-inferior{
+    width: 100%;
+    padding: 20px;
+    background-color: #161616;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 2px 15px rgba(0,0,0,.30);
 }
 
 .form-input input{
@@ -107,6 +118,10 @@ input, button{
     border: none;
     border-bottom: 3px solid rgba(15,98,254, .75)!important;
     border-radius: 5px;
+}
+
+.back{
+    color: #fff;
 }
 
 
