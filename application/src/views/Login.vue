@@ -4,12 +4,15 @@
             <form class="form-content">
                 <h1 class="title-box-content">Log in</h1>
                 <div class="form-input">
-                    <!--<label>Username</label><br />-->
                     <input type="text" placeholder="username@email.com" />
                 </div>
                 <div class="form-input">
-                    <!--<label>Password</label><br />-->
                     <input type="password" placeholder="password" />
+                </div>
+                <div class="form-check">
+                    <a href="#">Forgot</a>
+                    <label for="c-remember">
+                    <input type="checkbox" id="c-remenber" name="c-remember" /> Remember me</label>
                 </div>
                 <div class="form-button">
                     <button type="submit">Go</button>
@@ -79,6 +82,11 @@ a{
     text-decoration: none;
 }
 
+h1{
+    color: #161616;
+    font-size: 1.8rem;
+}
+
 body, html{
     width: 100%;
     height: 100vh;
@@ -86,6 +94,10 @@ body, html{
 
 #app{
     background: #0043CE!important;
+}
+
+button{
+    cursor: pointer;
 }
 
 input, button{
@@ -106,7 +118,7 @@ input, button{
 }
 
 .login{
-    width: 350px;
+    width: 320px;
     height: auto;
     position: relative;
     margin: 0 auto;
@@ -117,15 +129,15 @@ input, button{
     padding: 20px;
     background-color: #fff;
     border-radius: 10px 10px 0 0;
-    box-shadow: 1px 1px 15px rgba(0,0,0,.15);
+    box-shadow: 1px -1px 20px rgba(0,0,0,.15);
 }
 
 .box-login-inferior{
     width: 100%;
     padding: 20px;
-    background-color: rgba(0,17,65, .65);
+    background-color: #161616;
     border-radius: 0 0 10px 10px;
-    box-shadow: 1px 1px 15px rgba(0,0,0,.15);
+    box-shadow: 1px 2px 15px rgba(0,0,0,.30);
 }
 
 .title-box-content{
@@ -141,10 +153,10 @@ input, button{
 }
 
 .form-input input{
-    width: 250px;
+    width: 270px;
     padding: 10px 15px;
     border-radius: 30px;
-    border: 1px solid #999;
+    border: 1px solid rgb(177, 177, 177);
     margin: 10px 0;
 }
 
@@ -157,7 +169,7 @@ input, button{
 }
 
 .form-button button{
-    margin-top: 15px;
+    margin: 30px 0 10px 0;
     background-color: #002d9c;
     padding: 10px 30px;
     color: #fff;
@@ -197,6 +209,18 @@ input, button{
     padding: 8px 28px;
     background-color: #55acee;
     border-bottom: 3px solid #3e90cf;
+}
+
+.form-check label{
+    position: relative;
+    float: left;
+    margin-left: 10px;
+}
+
+.form-check a{
+    position: relative;
+    float: right;
+    margin-right: 15px;
 }
 
 </style>
