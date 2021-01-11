@@ -72,11 +72,23 @@ header{
 
 .btn-logout{
     width: 60px;
-    height: 60px;
+    height: 60px;    
     background-color: #161616;
     position: relative;
     float: right;
     cursor: pointer;
+}
+
+.btn-logout:hover{
+    background-color: #252525;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -o-transition: .7s;
+}
+
+.btn-logout svg{
+    margin: 20px 23px;
 }
 
 .st0{fill:#FFFFFF;}
