@@ -133,8 +133,12 @@ input, button{
     font-weight: 600;
     text-transform: uppercase;
     border: none;
-    border-bottom: 3px solid rgba(15,98,254, .75)!important;
+    border-bottom: 3px solid #001D6C!important;
     border-radius: 5px;
+}
+
+.form-button button:hover{
+    background-color: #022680;
 }
 
 .back{

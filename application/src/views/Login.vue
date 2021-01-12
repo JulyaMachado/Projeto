@@ -177,8 +177,12 @@ input, button{
     font-weight: 600;
     text-transform: uppercase;
     border: none;
-    border-bottom: 3px solid rgba(15,98,254, .75)!important;
+    border-bottom: 4px solid #001D6C!important;
     border-radius: 5px;
+}
+
+.form-button button:hover{
+    background-color: #022680;
 }
 
 .btn{
@@ -196,8 +200,12 @@ input, button{
 
 .btn-google{
     padding: 9px 25px;
-    background-color: #EA4335;
+    background-color: #da3e2f;
     border-bottom: 3px solid #bb2c1f;
+}
+
+.btn-google:hover{
+    background-color: #c73629;
 }
 
 .btn-linkedin{
@@ -206,10 +214,18 @@ input, button{
     border-bottom: 3px solid #025781;
 }
 
+.btn-linkedin:hover{
+    background-color: #0370a7;
+}
+
 .btn-twitter{
     padding: 8px 28px;
     background-color: #55acee;
-    border-bottom: 3px solid #3e90cf;
+    border-bottom: 3px solid #3784be;
+}
+
+.btn-twitter:hover{
+    background-color: #4795d1;
 }
 
 .form-check{
