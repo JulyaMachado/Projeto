@@ -16,7 +16,7 @@
             </form>
         </div>
         <div class="box-right">
-            <div class="btn-logout">
+            <div @click="login" class="btn-logout">
                 <svg>
                     <g>
                         <g>
@@ -44,7 +44,11 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+      login: function() {
+            this.$router.replace('/');
+        }
+  },
 };
 </script>
 

@@ -4,16 +4,16 @@
             <form class="form-content">
                 <h1 class="title-box-content">New account</h1>
                 <div class="form-input">
-                    <input type="text" placeholder="username@email.com" />
+                    <input type="text" placeholder="username@email.com" v-model="email" />
                 </div>
                 <div class="form-input">
-                    <input type="password" placeholder="password" />
+                    <input type="password" placeholder="password" v-model="senha" />
                 </div>
                 <div class="form-input">
-                    <input type="password" placeholder="confirm password" />
+                    <input type="password" placeholder="confirm password" v-model="senha" />
                 </div>
                 <div class="form-button">
-                    <button type="submit">Register</button>
+                    <button @click="sign-up">Register</button>
                 </div>
             </form>
         </div>
@@ -27,7 +27,10 @@
 export default {
     name: 'sign-up',
     data() {
-        return {};
+        return {
+            email: '',
+            senha: '',
+        };
     },
     methods: {
         login: function() {
