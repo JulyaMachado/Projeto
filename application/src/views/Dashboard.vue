@@ -36,6 +36,14 @@
             </div>
         </div>
     </header>
+
+    <section>
+        <ul>
+            <!--<li v-for="error of errors">
+                <div class="btn btn-primary">teste</div>
+            </li>-->
+        </ul>
+    </section>
   </div>
 </template>
 
@@ -43,7 +51,12 @@
 export default {
   name: "dashboard",
   data() {
-    return {};
+    return {
+        //errors: [],
+    };
+  },
+  created() {
+
   },
   methods: {
       login: function() {
