@@ -17,6 +17,7 @@
         </div>
         <div class="box-right">
             <div @click="login" class="btn-logout">
+                Sair 
                 <svg>
                     <g>
                         <g>

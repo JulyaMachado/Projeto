@@ -133,6 +133,27 @@ input, button{
     z-index: 9999;
 }
 
+@media only screen and (max-width: 780px){
+
+    .login{
+        width: 100%!important;
+        height: 100vh!important;
+        bottom: 0;
+        top: 0;
+    }
+
+    .box-login-superior{
+        height: 70%!important;
+        border-radius: 0!important;
+    }
+
+    .box-login-inferior{
+        height: 30%!important;
+        border-radius: 0!important;
+    }
+   
+}
+
 .box-login-superior{
     width: 100%;
     padding: 20px;
