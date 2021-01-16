@@ -57,8 +57,13 @@
                     </g>
                 </svg>
             </a>
+
+            <div class="new-account-mobile hidden-desktop">
+                <router-link to="/sign-up"><span>create <strong>new</strong> account</span></router-link>
+            </div>
+            
         </div>
-        <div class="link-new-account">
+        <div class="link-new-account hidden-mobile">
             <router-link to="/sign-up"><span>create <strong>new</strong> account</span></router-link>
         </div>
     </div>
@@ -151,7 +156,18 @@ input, button{
         height: 30%!important;
         border-radius: 0!important;
     }
+
+    .hidden-mobile{
+        display: none;
+    }
    
+}
+
+@media only screen and (min-width: 780px){
+
+    .hidden-desktop{
+        display: none;
+    }
 }
 
 .box-login-superior{
