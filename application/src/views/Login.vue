@@ -19,6 +19,9 @@
                 </div>
             </form>
         </div>
+        <div class="box-auth-medias">
+            <span>or connect</span>
+        </div>
         <div class="box-login-inferior flex-container-inline">
             <a href="" class="btn btn-google">
                 <svg>
@@ -57,11 +60,9 @@
                     </g>
                 </svg>
             </a>
-
-            <div class="new-account-mobile hidden-desktop">
-                <router-link to="/sign-up"><span>create <strong>new</strong> account</span></router-link>
-            </div>
-            
+        </div>
+        <div class="box-new-account-mobile hidden-desktop">
+            <router-link to="/sign-up"><span>create <strong>new</strong> account</span></router-link>
         </div>
         <div class="link-new-account hidden-mobile">
             <router-link to="/sign-up"><span>create <strong>new</strong> account</span></router-link>
@@ -134,7 +135,7 @@ input, button{
     height: auto;
     position: relative;
     margin: 0 auto;
-    top: 40px;
+    top: 60px;
     z-index: 9999;
 }
 
@@ -143,6 +144,9 @@ input, button{
     .login{
         width: 100%!important;
         height: 100vh!important;
+        padding: 0;
+        margin: 0;
+        overflow: hidden!important;
         bottom: 0;
         top: 0;
     }
@@ -152,15 +156,32 @@ input, button{
         border-radius: 0!important;
     }
 
+    .box-auth-medias{
+        width: 100%;
+        height: 10%;
+        min-height: 10%;
+    }
+
     .box-login-inferior{
-        height: 30%!important;
+        height: 20%!important;
         border-radius: 0!important;
+    }
+
+    .box-new-account-mobile{
+        width: 100%;
+        height: 10%!important;
+        background-color: #161616;
+        margin-top: -1px!important;
+    }
+
+    .box-new-account-mobile span{
+        color: #fff;
     }
 
     .hidden-mobile{
         display: none;
     }
-   
+    
 }
 
 @media only screen and (min-width: 780px){
@@ -178,12 +199,31 @@ input, button{
     box-shadow: 1px -1px 20px rgba(0,0,0,.15);
 }
 
+.box-auth-medias{
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #161616;
+    margin-bottom: -2px;
+}
+
+.box-auth-medias span{
+    color: #fff;
+}
+
 .box-login-inferior{
     width: 100%;
     padding: 20px;
     background-color: #161616;
     border-radius: 0 0 10px 10px;
-    box-shadow: 1px 2px 15px rgba(0,0,0,.30);
+    box-shadow: -1px 10px 15px rgba(0,0,0,.30);
+    margin-top: -1px!important;
 }
 
 .title-box-content{
@@ -290,7 +330,7 @@ input, button{
     margin-top: 10px;
 }
 
-.link-new-account span{
+.hidden-mobile span{
     color: #002d9c!important;
 }
 
